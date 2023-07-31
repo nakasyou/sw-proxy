@@ -43,6 +43,7 @@ jobs:
         run: pnpm run build
         env:
           NITRO_PRESET: service-worker
+          NITRO_APP_BASE_URL: /sw-proxy/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
